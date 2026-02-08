@@ -1,0 +1,1 @@
+[ 2026-02-08 14:52:47,091 ] ERROR root : Error occurred in python script name [C:\Users\LENOVO\Downloads\netsecurity\push_data.py] line number [32] error message [name 'file_path' is not defined]
