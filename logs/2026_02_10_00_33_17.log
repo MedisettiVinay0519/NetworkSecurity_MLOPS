@@ -1,0 +1,25 @@
+[ 2026-02-10 00:36:08,533 ] INFO networksecurityLogger : Start data Ingestion
+[ 2026-02-10 00:36:11,713 ] INFO networksecurityLogger : Connected to MongoDB Atlas successfully
+[ 2026-02-10 00:36:17,526 ] INFO networksecurityLogger : Exported MongoDB collection to DataFrame
+[ 2026-02-10 00:36:17,579 ] INFO networksecurityLogger : Feature store data saved successfully
+[ 2026-02-10 00:36:17,649 ] INFO networksecurityLogger : Train-test split completed successfully
+[ 2026-02-10 00:36:17,649 ] INFO networksecurityLogger : Data ingestion completed successfully
+[ 2026-02-10 00:36:17,650 ] INFO networksecurityLogger : Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='C:\\Users\\LENOVO\\Downloads\\netsecurity\\Artifacts\\02_10_2026_00_33_17\\data_ingestion\\ingested\\train.csv', test_file_path='C:\\Users\\LENOVO\\Downloads\\netsecurity\\Artifacts\\02_10_2026_00_33_17\\data_ingestion\\ingested\\test.csv')
+[ 2026-02-10 00:36:17,656 ] INFO networksecurityLogger : Initiate the data Validation
+[ 2026-02-10 00:36:17,680 ] INFO networksecurityLogger : Required number of columns:2
+[ 2026-02-10 00:36:17,680 ] INFO networksecurityLogger : Data frame has columns:31
+[ 2026-02-10 00:36:17,680 ] INFO networksecurityLogger : Required number of columns:2
+[ 2026-02-10 00:36:17,680 ] INFO networksecurityLogger : Data frame has columns:31
+[ 2026-02-10 00:36:17,824 ] INFO networksecurityLogger : Entered initiate_data_transformation method of DataTransformation class
+[ 2026-02-10 00:36:17,824 ] INFO networksecurityLogger : Starting data transformation
+[ 2026-02-10 00:36:17,848 ] INFO networksecurityLogger : Entered get_data_trnasformer_object method of Trnasformation class
+[ 2026-02-10 00:36:17,848 ] INFO networksecurityLogger : Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-02-10 00:36:17,863 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-10 00:36:17,866 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-10 00:36:17,866 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-10 00:36:17,869 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-10 00:41:51,119 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-10 00:41:51,186 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-10 00:41:51,186 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-10 00:41:51,247 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-10 00:41:51,248 ] INFO networksecurityLogger : Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='C:\\Users\\LENOVO\\Downloads\\netsecurity\\Artifacts\\02_10_2026_00_33_17\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9905822784810127, precision_score=0.9888799029518803, recall_score=0.992290525461554), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9720534629404617, precision_score=0.9669621273166801, recall_score=0.9771986970684039))

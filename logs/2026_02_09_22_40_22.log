@@ -1,0 +1,23 @@
+[ 2026-02-09 22:40:28,701 ] INFO networksecurityLogger : Connected to MongoDB Atlas successfully
+[ 2026-02-09 22:40:28,701 ] INFO networksecurityLogger : Initiate the data ingestion
+[ 2026-02-09 22:40:44,616 ] INFO networksecurityLogger : Exported MongoDB collection to DataFrame
+[ 2026-02-09 22:40:44,674 ] INFO networksecurityLogger : Feature store data saved successfully
+[ 2026-02-09 22:40:44,789 ] INFO networksecurityLogger : Train-test split completed successfully
+[ 2026-02-09 22:40:44,789 ] INFO networksecurityLogger : Data ingestion completed successfully
+[ 2026-02-09 22:40:44,789 ] INFO networksecurityLogger : Data Initiation Completed
+[ 2026-02-09 22:40:44,796 ] INFO networksecurityLogger : Initiate the data Validation
+[ 2026-02-09 22:40:44,825 ] INFO networksecurityLogger : Required number of columns:2
+[ 2026-02-09 22:40:44,825 ] INFO networksecurityLogger : Data frame has columns:31
+[ 2026-02-09 22:40:44,825 ] INFO networksecurityLogger : Required number of columns:2
+[ 2026-02-09 22:40:44,825 ] INFO networksecurityLogger : Data frame has columns:31
+[ 2026-02-09 22:40:44,978 ] INFO networksecurityLogger : data Validation Completed
+[ 2026-02-09 22:40:44,979 ] INFO networksecurityLogger : data Transformation started
+[ 2026-02-09 22:40:44,979 ] INFO networksecurityLogger : Entered initiate_data_transformation method of DataTransformation class
+[ 2026-02-09 22:40:44,979 ] INFO networksecurityLogger : Starting data transformation
+[ 2026-02-09 22:40:45,006 ] INFO networksecurityLogger : Entered get_data_trnasformer_object method of Trnasformation class
+[ 2026-02-09 22:40:45,006 ] INFO networksecurityLogger : Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-02-09 22:40:45,026 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-09 22:40:45,030 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-09 22:40:45,030 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-09 22:40:45,033 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-09 22:40:45,036 ] INFO networksecurityLogger : data Transformation completed

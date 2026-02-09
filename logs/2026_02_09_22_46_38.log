@@ -1,0 +1,30 @@
+[ 2026-02-09 22:46:43,955 ] INFO networksecurityLogger : Connected to MongoDB Atlas successfully
+[ 2026-02-09 22:46:43,956 ] INFO networksecurityLogger : Initiate the data ingestion
+[ 2026-02-09 22:47:04,000 ] INFO networksecurityLogger : Exported MongoDB collection to DataFrame
+[ 2026-02-09 22:47:04,051 ] INFO networksecurityLogger : Feature store data saved successfully
+[ 2026-02-09 22:47:04,106 ] INFO networksecurityLogger : Train-test split completed successfully
+[ 2026-02-09 22:47:04,106 ] INFO networksecurityLogger : Data ingestion completed successfully
+[ 2026-02-09 22:47:04,107 ] INFO networksecurityLogger : Data Initiation Completed
+[ 2026-02-09 22:47:04,113 ] INFO networksecurityLogger : Initiate the data Validation
+[ 2026-02-09 22:47:04,141 ] INFO networksecurityLogger : Required number of columns:2
+[ 2026-02-09 22:47:04,141 ] INFO networksecurityLogger : Data frame has columns:31
+[ 2026-02-09 22:47:04,141 ] INFO networksecurityLogger : Required number of columns:2
+[ 2026-02-09 22:47:04,141 ] INFO networksecurityLogger : Data frame has columns:31
+[ 2026-02-09 22:47:04,288 ] INFO networksecurityLogger : data Validation Completed
+[ 2026-02-09 22:47:04,289 ] INFO networksecurityLogger : data Transformation started
+[ 2026-02-09 22:47:04,289 ] INFO networksecurityLogger : Entered initiate_data_transformation method of DataTransformation class
+[ 2026-02-09 22:47:04,289 ] INFO networksecurityLogger : Starting data transformation
+[ 2026-02-09 22:47:04,313 ] INFO networksecurityLogger : Entered get_data_trnasformer_object method of Trnasformation class
+[ 2026-02-09 22:47:04,314 ] INFO networksecurityLogger : Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-02-09 22:47:04,326 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-09 22:47:04,332 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-09 22:47:04,332 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-09 22:47:04,335 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-09 22:47:04,336 ] INFO networksecurityLogger : data Transformation completed
+[ 2026-02-09 22:47:04,336 ] INFO networksecurityLogger : Model Training started
+[ 2026-02-09 22:54:20,381 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-09 22:54:20,447 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-09 22:54:20,448 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-09 22:54:20,473 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-09 22:54:20,474 ] INFO networksecurityLogger : Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='C:\\Users\\LENOVO\\Downloads\\netsecurity\\Artifacts\\02_09_2026_22_46_38\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9916903121199838, precision_score=0.9888843977364592, recall_score=0.9945121951219512), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9674085850556439, precision_score=0.9515246286161063, recall_score=0.9838318512530315))
+[ 2026-02-09 22:54:20,481 ] ERROR networksecurityLogger : Unexpected error: name 'logging' is not defined

@@ -1,0 +1,25 @@
+[ 2026-02-09 22:44:53,165 ] INFO networksecurityLogger : Connected to MongoDB Atlas successfully
+[ 2026-02-09 22:44:53,169 ] INFO networksecurityLogger : Initiate the data ingestion
+[ 2026-02-09 22:45:12,971 ] INFO networksecurityLogger : Exported MongoDB collection to DataFrame
+[ 2026-02-09 22:45:13,035 ] INFO networksecurityLogger : Feature store data saved successfully
+[ 2026-02-09 22:45:13,130 ] INFO networksecurityLogger : Train-test split completed successfully
+[ 2026-02-09 22:45:13,130 ] INFO networksecurityLogger : Data ingestion completed successfully
+[ 2026-02-09 22:45:13,130 ] INFO networksecurityLogger : Data Initiation Completed
+[ 2026-02-09 22:45:13,140 ] INFO networksecurityLogger : Initiate the data Validation
+[ 2026-02-09 22:45:13,208 ] INFO networksecurityLogger : Required number of columns:2
+[ 2026-02-09 22:45:13,208 ] INFO networksecurityLogger : Data frame has columns:31
+[ 2026-02-09 22:45:13,209 ] INFO networksecurityLogger : Required number of columns:2
+[ 2026-02-09 22:45:13,209 ] INFO networksecurityLogger : Data frame has columns:31
+[ 2026-02-09 22:45:13,363 ] INFO networksecurityLogger : data Validation Completed
+[ 2026-02-09 22:45:13,364 ] INFO networksecurityLogger : data Transformation started
+[ 2026-02-09 22:45:13,364 ] INFO networksecurityLogger : Entered initiate_data_transformation method of DataTransformation class
+[ 2026-02-09 22:45:13,364 ] INFO networksecurityLogger : Starting data transformation
+[ 2026-02-09 22:45:13,394 ] INFO networksecurityLogger : Entered get_data_trnasformer_object method of Trnasformation class
+[ 2026-02-09 22:45:13,394 ] INFO networksecurityLogger : Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-02-09 22:45:13,414 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-09 22:45:13,418 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-09 22:45:13,418 ] INFO networksecurityLogger : Entered the save_object method of MainUtils class
+[ 2026-02-09 22:45:13,422 ] INFO networksecurityLogger : Exited the save_object method of MainUtils class
+[ 2026-02-09 22:45:13,423 ] INFO networksecurityLogger : data Transformation completed
+[ 2026-02-09 22:45:13,424 ] INFO networksecurityLogger : Model Training started
+[ 2026-02-09 22:45:13,424 ] ERROR networksecurityLogger : Unexpected error: module 'networksecurity.constants.training_pipeline' has no attribute 'MODEL_TRAINER_DIR_NAME'
