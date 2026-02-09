@@ -1,2 +1,0 @@
-[ 2026-02-09 12:00:23,472 ] INFO networksecurityLogger : Starting Training Pipeline
-[ 2026-02-09 12:00:43,614 ] ERROR networksecurityLogger : Error occurred in python script name [C:\Users\LENOVO\Downloads\netsecurity\networksecurity\components\data_ingestion.py] line number [32] error message [The DNS operation timed out after 20.00860857963562 seconds]

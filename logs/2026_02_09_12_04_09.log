@@ -1,4 +1,0 @@
-[ 2026-02-09 12:04:12,639 ] INFO networksecurityLogger : Starting Training Pipeline
-[ 2026-02-09 12:04:14,517 ] INFO root : Connected to MongoDB Atlas successfully
-[ 2026-02-09 12:04:14,518 ] INFO networksecurityLogger : Initiating Data Ingestion
-[ 2026-02-09 12:04:23,969 ] ERROR networksecurityLogger : Error occurred in python script name [C:\Users\LENOVO\Downloads\netsecurity\networksecurity\components\data_ingestion.py] line number [102] error message [Error occurred in python script name [C:\Users\LENOVO\Downloads\netsecurity\networksecurity\components\data_ingestion.py] line number [52] error message [Cannot specify both 'axis' and 'index'/'columns']]

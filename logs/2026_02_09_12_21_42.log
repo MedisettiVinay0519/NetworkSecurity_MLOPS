@@ -1,8 +1,0 @@
-[ 2026-02-09 12:21:45,370 ] INFO networksecurityLogger : Starting Training Pipeline
-[ 2026-02-09 12:21:47,989 ] INFO networksecurityLogger : Connected to MongoDB Atlas successfully
-[ 2026-02-09 12:21:47,990 ] INFO networksecurityLogger : Initiating Data Ingestion
-[ 2026-02-09 12:21:56,882 ] INFO networksecurityLogger : Exported MongoDB collection to DataFrame
-[ 2026-02-09 12:21:56,940 ] INFO networksecurityLogger : Feature store data saved successfully
-[ 2026-02-09 12:21:57,005 ] INFO networksecurityLogger : Train-test split completed successfully
-[ 2026-02-09 12:21:57,006 ] INFO networksecurityLogger : Data ingestion completed successfully
-[ 2026-02-09 12:21:57,006 ] INFO networksecurityLogger : Data Ingestion Completed
