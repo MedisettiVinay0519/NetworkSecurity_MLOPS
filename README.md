@@ -8,7 +8,7 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb)](https://www.mongodb.com/)
 [![GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=github-actions)](https://github.com/features/actions)
 
-An **end-to-end Machine Learning CI pipeline** designed to detect malicious network activities. This project focuses on modular code architecture, automated image building, and remote experiment tracking.
+An **end-to-end MLOps project** for network threat detection. [cite_start]This pipeline automates the journey from raw data ingestion to a containerized production-ready API. [cite: 1, 27]
 
 ---
 
@@ -21,32 +21,37 @@ An **end-to-end Machine Learning CI pipeline** designed to detect malicious netw
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="42"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg" width="42"/>
   <img src="https://avatars.githubusercontent.com/u/73596471?s=200&v=4" width="42" title="DagsHub"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="42"/>
 </p>
 
-- **Core:** Python 3.10, FastAPI, Scikit-learn
-- **MLOps:** MLflow (Experiment Tracking), DagsHub (Model Registry)
-- **Database:** MongoDB Atlas (NoSQL)
-- **DevOps:** Docker (Containerization), GitHub Actions (CI Pipeline)
+- [cite_start]**Core:** Python 3.10, FastAPI, Scikit-learn 
+- [cite_start]**Data Engineering:** ETL Pipeline (CSV/S3 to MongoDB Atlas) 
+- [cite_start]**MLOps:** MLflow (Experiment Tracking), DagsHub (Remote Backend) 
+- [cite_start]**DevOps:** Docker, GitHub Actions (CI for Docker builds) 
 
 ---
 
 ## 🏗️ Project Architecture
 
-```mermaid
-graph TD
-    A[MongoDB Atlas] -->|Data Ingestion| B(Data Validation)
-    B --> C(Data Transformation)
-    C --> D(Model Trainer)
-    D -->|Push Metrics| E[DagsHub/MLflow]
-    D -->|Export Artifact| F[Model Serialization]
-    F --> G(FastAPI Endpoint)
-    G --> H{User Prediction}
-    subgraph CI Pipeline
-    J[Code Push] --> K[GitHub Actions]
-    K --> L[Docker Build]
-    L --> M[Container Image]
-    end
+### 🔄 ETL Pipeline (Extract, Transform, Load)
+[cite_start]Raw data is processed and stored in a NoSQL format before entering the ML pipeline. [cite: 27]
+* [cite_start]**Source:** Extracts data from CSV, S3 Buckets, or APIs. [cite: 28, 30, 32]
+* [cite_start]**Transformation:** Performs basic cleaning and converts data to JSON. [cite: 36, 37]
+* [cite_start]**Load:** Stores the cleaned data into **MongoDB Atlas**. [cite: 38, 39, 48]
 
+### 🧪 ML Pipeline Components
+[cite_start]The system follows a modular component-based structure: 
+1. [cite_start]**Data Ingestion:** Retrieves data from MongoDB and splits it into train/test sets. [cite: 58, 76]
+2. [cite_start]**Data Validation:** Checks schema and identifies **Data Drift** (Distribution shifts). [cite: 85, 96, 140]
+3. [cite_start]**Data Transformation:** Implements **KNN Imputer** for missing value handling and scales features. [cite: 142, 197]
+4. [cite_start]**Model Training:** Utilizes a **Model Factory** to find the best performing model. [cite: 204, 250]
 
+---
+
+## 🐳 CI/CD & Docker
+* [cite_start]**Continuous Integration:** Every push to `main` triggers **GitHub Actions** to build the Docker image. 
+* [cite_start]**Containerization:** The entire application is packaged into a **Docker Image** for consistent deployment. [cite: 272, 275]
+* **Run Locally:**
+  ```bash
+  docker build -t network-security-app .
+  docker run -p 8000:8000 network-security-app
 ```
